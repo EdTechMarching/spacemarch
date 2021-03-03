@@ -1,0 +1,21 @@
+/* Reset */
+:root {
+	--main-color: hotpink;
+	--pane-padding: 5px 42px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.question-container {
+	display: flex;
+	justify-content: center;
+}
+
+.mystery-circles {
+	height: 300px;
+	width: 300px;
+}
