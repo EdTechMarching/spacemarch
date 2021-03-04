@@ -1,14 +1,22 @@
 import React from "react"
-import { Button } from "react-bootstrap"
+import { connect } from "react-redux"
+import { getCurrentQuestion } from "../redux/rootActions"
 import "./QuestionStyles.css"
 
-const Question = () => {
+const Question = ({ currentQuestion, getQuestion }) => {
 	return (
 		<div className="question-container">
 			<div className="mystery-circle mt-5"></div>
-			<Button variant="primary">Hello</Button>
 		</div>
 	)
 }
 
-export default Question
+const mapDispatchToProps = dispatch => ({
+	getQuestion: () => dispatch(getCurrentQuestion())
+})
+
+const mapStateToProps = ({ question: { currentQuestion } }) => ({
+	currentQuestion
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Question)
