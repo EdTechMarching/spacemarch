@@ -1,4 +1,8 @@
-export const setCurrent_ = value => ({
-	type: "SET_CURRENT_",
-	payload: value
+// export const setCurrentQuestion = value => ({
+// 	type: "SET_CURRENT_QUESTION",
+// 	payload: value
+// })
+
+export const getCurrentQuestion = () => ({
+	type: "GET_QUESTION"
 })
