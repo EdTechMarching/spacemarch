@@ -6,16 +6,16 @@ const Radio = () => {
     <div id="answer-container">
       <div className="answer-options">
         <button>
-            <img src="https://cdn.britannica.com/25/160325-050-EB1C8FB7/image-instruments-Earth-satellite-NASA-Suomi-National-2012.jpg"/>
+            <img src="https://static4.depositphotos.com/1009645/357/v/600/depositphotos_3573055-stock-illustration-world-globe-editable-vector.jpg"/>
             Earth
         </button>
         <button>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg"/>
+            <img src="https://wallsheaven.co.uk/photos/E886414123/220/planet-mars,-the-red-planet-isolated-on-white-background.webp"/>
             Mars
         </button>
         <button>
-            <img src="https://images.theconversation.com/files/92417/original/image-20150819-10832-6b7mub.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"/>
-            Jupitor
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeiZKqZvMXfv7a3pIygdAR5KhuSU1UwtVcvg&usqp=CAU"/>
+            Venus
         </button>
       </div>
     </div>
