@@ -1,7 +1,7 @@
 import React from "react"
-import "./AnswerStyles.css"
+import "./RadioStyles.css"
 
-const Answer = () => {
+const Radio = () => {
   return (
     <div id="answer-container">
       <div className="answer-options">
@@ -22,4 +22,4 @@ const Answer = () => {
   )
 }
 
-export default (Answer)
+export default (Radio)

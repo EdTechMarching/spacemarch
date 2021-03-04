@@ -1,12 +1,15 @@
 import React from "react"
 import Question from "../components/Question"
-import Answer from "../components/Answer"
+import Radio from "../components/Radio"
+import PopUp from "../components/PopUp"
+
 
 const GamePage = () => {
 	return (
 		<>
 			<Question />
-			<Answer />
+			<Radio />
+			<PopUp />
 		</>
 	)
 }
