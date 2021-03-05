@@ -11,7 +11,7 @@ render = () => {
             <h2>Yes, I am Mars!</h2>
             <div className="pop-up-details">
               <div className="pop-up-img">
-                <img src="https://res.cloudinary.com/tinamarieg/image/upload/v1614967030/mars-4628918_640_2_1_kxaldk.jpg" />
+                <img alt="Image of the planet that was selected" src="https://res.cloudinary.com/tinamarieg/image/upload/v1614967030/mars-4628918_640_2_1_kxaldk.jpg" alt=/>
               </div>
               <div className="pop-up-info">
                 <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".
