@@ -8,11 +8,16 @@ import Saturn from "../components/planets/Saturn"
 import Uranus from "../components/planets/Uranus"
 import Venus from "../components/planets/Venus"
 import Question from "../components/Question"
+import Radio from "../components/Radio"
+import PopUp from "../components/PopUp"
+
 
 const GamePage = () => {
 	return (
 		<>
 			<Question />
+			<Radio />
+			<PopUp />
 			<Mercury />
 			<Venus />
 			<Earth />
