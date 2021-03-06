@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+
+
 const Earth = () => {
     return ( 
-        <div className="mercury">
-            <h3>Earth</h3>
+        <div className="earth" >
+            <h1>?</h1>
         </div>
      );
 }
