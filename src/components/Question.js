@@ -4,9 +4,41 @@ import { getCurrentQuestion } from "../redux/rootActions"
 import "./QuestionStyles.css"
 
 const Question = ({ currentQuestion, getQuestion }) => {
+	const {
+		answer,
+		selection,
+		hint,
+		popupRight,
+		popupImage,
+		popupBelow
+	} = currentQuestion
+
+	const displayHint = () => {
+		return (
+			<>
+				{currentQuestion ? (
+					<h6 className="hint0">{hint[0]}</h6>
+				) : (
+					<h6>not found</h6>
+				)}
+				{currentQuestion ? (
+					<h6 className="hint1">{hint[1]}</h6>
+				) : (
+					<h6>not found</h6>
+				)}
+				{currentQuestion ? (
+					<h6 className="hint2">{hint[2]}</h6>
+				) : (
+					<h6>not found</h6>
+				)}
+			</>
+		)
+	}
+
 	return (
 		<div className="question-container">
-			<div className="mystery-circle mt-5"></div>
+			{displayHint()}
+			<div className="mystery-circle mt-5" onClick={getQuestion}></div>
 		</div>
 	)
 }

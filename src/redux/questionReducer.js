@@ -3,7 +3,7 @@ import axios from "axios"
 // State
 const INITIAL_STATE = {
 	questionBox: [], // spread array here
-	currentQuestion: [], // get one question per currentNumber
+	currentQuestion: "", // get one question per currentNumber
 	currentNumber: 0 //
 }
 
@@ -13,12 +13,9 @@ let { questionBox, currentQuestion, currentNumber } = INITIAL_STATE
 const fetchQuestion = () => {
 	questionBox = []
 	try {
-		axios
-			.get("http://localhost:4000/questions/")
-			.then(res => {
-				questionBox.push(...res.data)
-			})
-			.then(res => [getQuestion()])
+		axios.get("http://localhost:4000/questions/").then(res => {
+			questionBox.push(...res.data)
+		})
 	} catch (e) {
 		console.log("NOTHING FOUND")
 	}
@@ -26,9 +23,9 @@ const fetchQuestion = () => {
 
 // get ////////////////////////
 const getQuestion = () => {
-	currentQuestion = [questionBox[currentNumber]]
+	currentQuestion = questionBox[currentNumber]
 	currentNumber++
-	return currentQuestion
+	return { ...currentQuestion }
 }
 
 fetchQuestion() // init fetch
@@ -38,7 +35,7 @@ const questionReducer = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case "GET_QUESTION":
 			return {
-				...getQuestion()
+				currentQuestion: getQuestion()
 			}
 
 		default:
