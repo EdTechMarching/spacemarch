@@ -1,22 +1,23 @@
 :root {
-	--main-color: hotpink;
-	--pane-padding: 5px 42px;
+  --main-color: hotpink;
+  --pane-padding: 5px 42px;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #e5e5e5;
 }
 
 .question-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .mystery-circle {
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	background-color: var(--main-color);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: var(--main-color);
 }

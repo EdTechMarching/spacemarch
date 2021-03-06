@@ -2,7 +2,7 @@ import React from 'react'
 const Mercury = () => {
     return ( 
         <div className="mercury">
-            <h3>Mercury</h3>
+            <h1>?</h1>
         </div>
      );
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 const Neptune = () => {
     return ( 
-        <div className="mercury">
-            <h3>Neptune</h3>
+        <div className="neptune">
+            <h1>?</h1>
         </div>
      );
 }
