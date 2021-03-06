@@ -16,62 +16,81 @@
 }
 
 .earth {
+  display: flex;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: #fff;
-  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
 }
 .jupiter {
+  display: flex;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: rgb(255, 246, 246);
-  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
 }
 .mars {
+  display: flex;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: rgb(255, 246, 246);
-  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
 }
 .mercury {
+  display: flex;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: rgb(255, 246, 246);
-  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
 }
 .neptune {
+  display: flex;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: rgb(255, 246, 246);
-  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
 }
 .saturn {
+  display: flex;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: rgb(255, 246, 246);
-  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
 }
 .uranus {
+  display: flex;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: rgb(255, 246, 246);
-  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
 }
 .venus {
+  display: flex;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: rgb(255, 246, 246);
-  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  background-color: #fff;
 }
