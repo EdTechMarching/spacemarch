@@ -1,23 +1,49 @@
 :root {
-  --main-color: hotpink;
-  --pane-padding: 5px 42px;
+	--main-color: hotpink;
+	--pane-padding: 5px 20px;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #e5e5e5;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #e5e5e5;
 }
 
 .question-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
 }
 
 .mystery-circle {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  background-color: var(--main-color);
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: var(--main-color);
+}
+
+.hint0,
+.hint1,
+.hint2 {
+	/* height: 200px; */
+	width: 250px;
+	background: transparent;
+}
+
+.hint0 {
+	position: absolute;
+	top: 30px;
+	left: 140px;
+}
+
+.hint1 {
+	position: absolute;
+	top: 80px;
+	right: 100px;
+}
+.hint2 {
+	position: absolute;
+	top: 160px;
+	left: 300px;
 }
