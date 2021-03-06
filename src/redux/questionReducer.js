@@ -14,8 +14,7 @@ let { trashBox, questionBox, currentQuestion, currentNumber } = INITIAL_STATE
 // array:[{question: String,
 // answer: String,
 // selection: [{name: String, image:String}, {name: String, image:String}, {name: String, image:String}],
-// hint: [String x3]
-// completed: Boolean} x8]
+// hint: [String x3] x8]
 
 // fetch ////////////////////////
 const fetchQuestion = () => {
