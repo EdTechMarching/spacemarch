@@ -16,21 +16,9 @@ const Question = ({ currentQuestion, getQuestion }) => {
 	const displayHint = () => {
 		return (
 			<>
-				{currentQuestion ? (
-					<h6 className="hint0">{hint[0]}</h6>
-				) : (
-					<h6>not found</h6>
-				)}
-				{currentQuestion ? (
-					<h6 className="hint1">{hint[1]}</h6>
-				) : (
-					<h6>not found</h6>
-				)}
-				{currentQuestion ? (
-					<h6 className="hint2">{hint[2]}</h6>
-				) : (
-					<h6>not found</h6>
-				)}
+				{currentQuestion ? <h6 className="hint0">{hint[0]}</h6> : null}
+				{currentQuestion ? <h6 className="hint1">{hint[1]}</h6> : null}
+				{currentQuestion ? <h6 className="hint2">{hint[2]}</h6> : null}
 			</>
 		)
 	}
