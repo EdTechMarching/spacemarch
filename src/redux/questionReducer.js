@@ -24,9 +24,7 @@ const fetchQuestion = () => {
 // get ////////////////////////
 const getQuestion = () => {
 	currentQuestion = questionBox[currentNumber]
-	if (currentQuestion === "") {
-		return null
-	} else if (currentNumber !== questionBox.length - 1) {
+	if (currentNumber !== questionBox.length - 1) {
 		currentNumber++
 	}
 	return { ...currentQuestion }
@@ -39,7 +37,9 @@ const questionReducer = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case "GET_QUESTION":
 			return {
-				currentQuestion: getQuestion()
+				currentQuestion: getQuestion(),
+				currentNumber,
+				questionBox
 			}
 
 		default:
