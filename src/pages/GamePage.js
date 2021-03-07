@@ -1,6 +1,4 @@
 import React, { useState } from "react"
-import { connect } from "react-redux"
-import { getCurrentQuestion } from "../redux/rootActions"
 import Question from "../components/Question"
 import PlayText from "../components/PlayText"
 import GuessText from "../components/GuessText"
@@ -50,17 +48,4 @@ const GamePage = ({
 	)
 }
 
-const mapDispatchToProps = dispatch => ({
-	getQuestion: () => dispatch(getCurrentQuestion())
-})
-
-const mapStateToProps = ({
-	question: { currentQuestion, currentNumber, questionBox, planetRender }
-}) => ({
-	currentQuestion,
-	currentNumber,
-	questionBox,
-	planetRender
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(GamePage)
+export default GamePage

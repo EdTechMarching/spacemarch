@@ -1,6 +1,5 @@
 import React from "react"
 const Earth = ({ planetRender, questionBox }) => {
-	console.log(questionBox)
 	return (
 		<div className="earth">
 			{planetRender > 6 ? (
