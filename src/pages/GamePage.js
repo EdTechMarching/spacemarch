@@ -11,11 +11,10 @@ import Planets from "../components/planets/Planets"
 const GamePage = ({
 	currentQuestion,
 	getQuestion,
-	currentNumber,
+	planetRender,
 	questionBox
 }) => {
 	let [popUpState, togglePopUpState] = useState(null)
-	console.log(questionBox, "here")
 	const handlePopUp = value => {
 		if (value === "true") {
 			return togglePopUpState((popUpState = "next"))
@@ -44,7 +43,7 @@ const GamePage = ({
 			/>
 			<Planets
 				currentQuestion={currentQuestion}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 		</>
@@ -56,11 +55,12 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const mapStateToProps = ({
-	question: { currentQuestion, currentNumber, questionBox }
+	question: { currentQuestion, currentNumber, questionBox, planetRender }
 }) => ({
 	currentQuestion,
 	currentNumber,
-	questionBox
+	questionBox,
+	planetRender
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(GamePage)

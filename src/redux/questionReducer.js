@@ -4,10 +4,16 @@ import axios from "axios"
 const INITIAL_STATE = {
 	questionBox: [], // spread array here
 	currentQuestion: "", // get one question per currentNumber
-	currentNumber: 0 //
+	currentNumber: 0, // keeps track of how many questions already asked
+	planetRender: -1 // keeps track of when to render planet after a correct answer is given
 }
 
-let { questionBox, currentQuestion, currentNumber } = INITIAL_STATE
+let {
+	questionBox,
+	currentQuestion,
+	currentNumber,
+	planetRender
+} = INITIAL_STATE
 
 // fetch ////////////////////////
 const fetchQuestion = () => {
@@ -26,8 +32,10 @@ const getQuestion = () => {
 	currentQuestion = questionBox[currentNumber]
 	if (currentNumber !== questionBox.length - 1) {
 		currentNumber++
+		return { ...currentQuestion, ...planetRender++ }
+	} else {
+		return { ...currentQuestion, ...planetRender++ }
 	}
-	return { ...currentQuestion }
 }
 
 fetchQuestion() // init fetch
@@ -38,7 +46,7 @@ const questionReducer = (state = INITIAL_STATE, action) => {
 		case "GET_QUESTION":
 			return {
 				currentQuestion: getQuestion(),
-				currentNumber,
+				planetRender,
 				questionBox
 			}
 
