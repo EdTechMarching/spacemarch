@@ -9,49 +9,49 @@ import Uranus from "./Uranus"
 import Venus from "./Venus"
 import "./PlanetsStyle.css"
 
-const Planets = ({ currentQuestion, currentNumber, questionBox }) => {
+const Planets = ({ currentQuestion, planetRender, questionBox }) => {
 	const { answer } = currentQuestion
 
 	return (
 		<div className="planetContainer">
 			<Mercury
 				answer={answer}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 			<Venus
 				answer={answer}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 			<Earth
 				answer={answer}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 			<Mars
 				answer={answer}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 			<Jupiter
 				answer={answer}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 			<Saturn
 				answer={answer}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 			<Uranus
 				answer={answer}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 			<Neptune
 				answer={answer}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 		</div>
