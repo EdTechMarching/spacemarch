@@ -3,15 +3,8 @@ import { connect } from "react-redux"
 import { getCurrentQuestion } from "../redux/rootActions"
 import "./QuestionStyles.css"
 
-const Question = ({ currentQuestion, getQuestion }) => {
-	const {
-		answer,
-		selection,
-		hint,
-		popupRight,
-		popupImage,
-		popupBelow
-	} = currentQuestion
+const Question = ({ currentQuestion }) => {
+	const { hint } = currentQuestion
 
 	const displayHint = () => {
 		return (
