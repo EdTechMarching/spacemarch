@@ -24,7 +24,7 @@ const Question = ({ currentQuestion, getQuestion }) => {
 	}
 
 	return (
-		<div className="question-container">
+	<div className="question-container">
 			{displayHint()}
 			<div className="mystery-circle mt-5" onClick={getQuestion}></div>
 		</div>
