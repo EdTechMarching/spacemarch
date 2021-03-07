@@ -1,7 +1,7 @@
 import React from "react"
 import "./QuestionStyles.css"
 
-const Question = ({ currentQuestion, getQuestion }) => {
+const Question = ({ currentQuestion }) => {
 	const { hint } = currentQuestion
 
 	const displayHint = () => {
