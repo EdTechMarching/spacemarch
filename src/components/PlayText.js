@@ -2,6 +2,6 @@ import React from "react"
 import "./PlayTextStyles.css"
 
 const PlayText = () => {
-	return <h1 className="play">Play Planets</h1>
+	return <h2 className="play">Play Planets</h2>
 }
 export default PlayText

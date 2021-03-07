@@ -2,11 +2,10 @@ import React from "react"
 
 import GamePage from "./pages/GamePage"
 
-  const App = () => {
+const App = () => {
 	return (
 		<>
 			<GamePage />
-			
 		</>
 	)
 }
