@@ -1,8 +1,17 @@
 import React from "react"
+import { connect } from "react-redux"
+import { getCurrentQuestion } from "../redux/rootActions"
 import "./QuestionStyles.css"
 
 const Question = ({ currentQuestion, getQuestion }) => {
-	const { hint } = currentQuestion
+	const {
+		answer,
+		selection,
+		hint,
+		popupRight,
+		popupImage,
+		popupBelow
+	} = currentQuestion
 
 	const displayHint = () => {
 		return (
@@ -15,11 +24,19 @@ const Question = ({ currentQuestion, getQuestion }) => {
 	}
 
 	return (
-	<div className="question-container">
+	    <div className="question-container">
 			{displayHint()}
 			<div className="mystery-circle mt-5" onClick={getQuestion}></div>
 		</div>
 	)
 }
 
-export default Question
+const mapDispatchToProps = dispatch => ({
+	getQuestion: () => dispatch(getCurrentQuestion())
+})
+
+const mapStateToProps = ({ question: { currentQuestion } }) => ({
+	currentQuestion
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Question)
