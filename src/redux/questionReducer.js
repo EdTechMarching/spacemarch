@@ -24,9 +24,7 @@ const fetchQuestion = () => {
 // get ////////////////////////
 const getQuestion = () => {
 	currentQuestion = questionBox[currentNumber]
-	if (currentQuestion === "") {
-		return null
-	} else if (currentNumber !== questionBox.length - 1) {
+	if (currentNumber !== questionBox.length - 1) {
 		currentNumber++
 	}
 	return { ...currentQuestion }
