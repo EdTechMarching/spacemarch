@@ -37,7 +37,7 @@ const GamePage = ({ currentQuestion, getQuestion }) => {
 				handlePopUp={handlePopUp}
 				getQuestion={getQuestion}
 			/>
-			<Planets />
+			<Planets currentQuestion={currentQuestion} popUpState={popUpState} />
 		</>
 	)
 }

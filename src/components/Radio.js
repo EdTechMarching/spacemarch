@@ -19,20 +19,8 @@ const Radio = ({ currentQuestion, handlePopUp, popUpState }) => {
 		return handlePopUp("false")
 	}
 
-	// const resetRadioButton = () => {
-	// 	if (popUpState === null) {
-	// 		return false
-	// 	} else if (popUpState === "retry") {
-	// 		return false
-	// 	} else if (popUpState === "next") {
-	// 		return false
-	// 	} else {
-	// 		return true
-	// 	}
-	// }
-
-	return (
-		<div id="answer-container">
+	const view = () => {
+		return (
 			<div className="answer-options">
 				<label htmlFor={s0}>
 					<input
@@ -65,8 +53,19 @@ const Radio = ({ currentQuestion, handlePopUp, popUpState }) => {
 				</label>
 				<br />
 			</div>
-		</div>
-	)
+		)
+	}
+	const resetRadioButton = () => {
+		if (popUpState === null) {
+			return view()
+		} else if (popUpState === "retry") {
+			return view()
+		} else if (popUpState === "next") {
+			return view()
+		}
+	}
+
+	return <div id="answer-container">{resetRadioButton()}</div>
 }
 
 export default Radio
