@@ -1,8 +1,8 @@
 import React from "react"
-const Uranus = ({ currentNumber, questionBox }) => {
+const Uranus = ({ planetRender, questionBox }) => {
 	return (
 		<div className="uranus">
-			{currentNumber > 5 ? (
+			{planetRender > 4 ? (
 				<img
 					alt="Planet that was selected during game play"
 					src={questionBox[4].answer[1]}

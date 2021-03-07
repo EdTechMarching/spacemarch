@@ -1,6 +1,4 @@
 import React, { useState } from "react"
-import { connect } from "react-redux"
-import { getCurrentQuestion } from "../redux/rootActions"
 import Question from "../components/Question"
 import PlayText from "../components/PlayText"
 import GuessText from "../components/GuessText"
@@ -11,11 +9,10 @@ import Planets from "../components/planets/Planets"
 const GamePage = ({
 	currentQuestion,
 	getQuestion,
-	currentNumber,
+	planetRender,
 	questionBox
 }) => {
 	let [popUpState, togglePopUpState] = useState(null)
-	console.log(questionBox, "here")
 	const handlePopUp = value => {
 		if (value === "true") {
 			return togglePopUpState((popUpState = "next"))
@@ -44,23 +41,11 @@ const GamePage = ({
 			/>
 			<Planets
 				currentQuestion={currentQuestion}
-				currentNumber={currentNumber}
+				planetRender={planetRender}
 				questionBox={questionBox}
 			/>
 		</>
 	)
 }
 
-const mapDispatchToProps = dispatch => ({
-	getQuestion: () => dispatch(getCurrentQuestion())
-})
-
-const mapStateToProps = ({
-	question: { currentQuestion, currentNumber, questionBox }
-}) => ({
-	currentQuestion,
-	currentNumber,
-	questionBox
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(GamePage)
+export default GamePage
