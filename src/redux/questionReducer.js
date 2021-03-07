@@ -22,9 +22,11 @@ const fetchQuestion = () => {
 	questionBox = []
 
 	try {
-		axios.get("http://localhost:4000/questions/").then(res => {
-			questionBox.push(...res.data)
-		})
+		axios
+			.get("https://spacemarch-sprint-be.herokuapp.com/questions")
+			.then(res => {
+				questionBox.push(...res.data)
+			})
 	} catch (e) {
 		console.log("NOTHING FOUND")
 	}
