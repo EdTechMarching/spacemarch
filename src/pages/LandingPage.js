@@ -5,7 +5,8 @@ const LandingPage = ({ getQuestion }) => {
 		<>
 			<div
 				style={{
-					background: "black",
+					backgroundImage: "url(https://wallpaperaccess.com/full/37637.jpg)",
+					backgroundSize: '100%',
 					width: "100vw",
 					height: "100vh"
 				}}
