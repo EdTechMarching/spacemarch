@@ -3,7 +3,7 @@ import "./QuestionStyles.css"
 
 const Question = ({ currentQuestion }) => {
 	const { hint } = currentQuestion
-
+	console.log("heroku text")
 	const displayHint = () => {
 		return (
 			<>
