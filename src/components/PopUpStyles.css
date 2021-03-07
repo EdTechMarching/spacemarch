@@ -5,7 +5,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+  background-color: #000000B0;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 }
+
 
 #pop-up-text {
 	display: flex;
@@ -13,8 +22,14 @@
 	align-items: center;
 	border: 1px solid black;
 	border-radius: 2%;
-	width: 60%;
 	padding: 40px;
+  background-color: white;
+  /* z-index: 1; */
+  height: auto;
+  width: 60%;
+  margin: 150px auto;
+
+
 }
 
 h2 {
@@ -24,6 +39,10 @@ h2 {
 	margin-bottom: 35px;
 	font-size: 36px;
 	line-height: 57px;
+}
+
+#pop-up-text>h2{
+  background-color: white;
 }
 
 .pop-up-img {
@@ -39,6 +58,8 @@ h2 {
 .pop-up-info {
 	line-height: 30px;
 	float: none;
+  background-color: white;
+
 }
 button {
 	font-weight: bold;
