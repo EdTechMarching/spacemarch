@@ -1,0 +1,50 @@
+* {
+	font-family: "Baloo 2", cursive;
+	font-weight: bold;
+}
+/* 
+#answer-container {
+	display: flex;
+	justify-content: center;
+} */
+
+.answer-options {
+	height: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 100px 0;
+	/* margin: 100px; */
+}
+
+label {
+	/* margin-right: 100px; */
+	padding: 0 20px;
+	font-size: 24px;
+	margin: 0;
+}
+
+input {
+	margin-right: 10px;
+	height: 1rem;
+	/* width: 30px; */
+	/* height: 0.8em; */
+}
+/* button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10%;
+} */
+/* button:hover{
+  border: 3px solid gold;
+}
+img {
+  width: 180px;
+  height: auto;
+  border-radius: 10%;
+} */
