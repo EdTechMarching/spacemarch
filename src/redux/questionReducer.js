@@ -37,7 +37,9 @@ const questionReducer = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case "GET_QUESTION":
 			return {
-				currentQuestion: getQuestion()
+				currentQuestion: getQuestion(),
+				currentNumber,
+				questionBox
 			}
 
 		default:
