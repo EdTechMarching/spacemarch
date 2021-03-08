@@ -37,12 +37,12 @@ const PopUp = ({ popUpState, currentQuestion, getQuestion, handlePopUp }) => {
 
 				) : popUpState === "retry" ? (
           <div id="pop-up">
-          <div id="pop-up-text">
-          <div className="close-div">
-          <button onClick={handlePopUp} className="close-try-again">X</button>
-          </div>
-          <h2>Try Again!</h2>
-          </div>
+            <div id="pop-up-text-try">
+            <button onClick={handlePopUp} className="close-try-again">X</button>
+              <div className="pop-up-info">
+                <h2>Try Again!</h2>
+              </div>
+            </div>
           </div>
 				) : null}
 

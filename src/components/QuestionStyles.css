@@ -7,7 +7,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background: #e5e5e5;
+	background: #E5E5E5;
 }
 
 .question-container {
@@ -17,6 +17,8 @@
 }
 
 .mystery-circle {
+	background-image: url("https://res.cloudinary.com/tinamarieg/image/upload/v1615215113/Blank_planet_image__guess_who_I_am__fjvgle.png");
+	background-position: center;
 	height: 100px;
 	width: 100px;
 	border-radius: 50%;

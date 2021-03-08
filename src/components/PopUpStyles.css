@@ -24,9 +24,23 @@
 	border-radius: 2%;
 	padding: 40px;
   background-color: white;
-  /* z-index: 1; */
   height: auto;
   width: 60%;
+  margin: 90px auto;
+}
+
+#pop-up-text-try {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding-left: 90px;
+  padding-right: 90px;
+  background-color: white;
+  overflow: auto;
+  height: auto;
+  width: auto;
   margin: 150px auto;
 }
 
@@ -63,13 +77,17 @@ h2 {
 .pop-up-info {
   background-color: white;
 }
+.pop-up-info>h2 {
+  background-color: white;
+  width: 350px;
+}
 .close-try-again {
   background-color: white;
   color: black;
+  float: right;
+  margin-right: -140%;
 }
-.close-div {
-  background-color: white;
-}
+
 button {
 	font-weight: bold;
 	width: 63px;
