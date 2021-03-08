@@ -7,28 +7,28 @@ const LandingPage = ({ getQuestion }) => {
 			<div
 				style={{
 					backgroundImage: "url(https://res.cloudinary.com/tinamarieg/image/upload/v1615164464/Landing_Page_ctuuze.png)",
-					backgroundSize: '100%',
+					backgroundSize: 'cover',
 					width: "100vw",
-					height: "100vh"
+					height: "100vh",
+					position: "fixed"
 				}}
 				onClick={getQuestion}>
 
-				<h1
+				<img
+					src="https://res.cloudinary.com/tinamarieg/image/upload/v1615216922/PlayPlanetsWhite_in5bdt.png"
+					alt="Play Planets Logo"
 					style={{
-						position: "absolute",
-						fontSize: "56px",
-						width: "100vw",
-						height: "100vh",
-						textAlign: "center",
 						background: "transparent",
-						color: "white",
-						top: "100px"
-					}}>
-					Play Planets
-				</h1>
+						position: "absolute",
+						marginLeft: "25%",
+						marginTop: "60px"
+					}}
+					/>
+
 				<h2
 					style={{
 						position: "absolute",
+						fontSize: "56px",
 						width: "inherit",
 						height: "inherit",
 						background: "transparent",
