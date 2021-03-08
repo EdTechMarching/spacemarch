@@ -63,6 +63,13 @@ h2 {
 .pop-up-info {
   background-color: white;
 }
+.close-try-again {
+  background-color: white;
+  color: black;
+}
+.close-div {
+  background-color: white;
+}
 button {
 	font-weight: bold;
 	width: 63px;
