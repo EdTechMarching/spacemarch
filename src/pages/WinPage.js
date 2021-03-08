@@ -5,12 +5,12 @@ const WinPage = ({ restart }) => {
 		<>
 			<div
 				style={{
-					backgroundImage: "url(https://res.cloudinary.com/tinamarieg/image/upload/v1615164466/Congratulations_Pop-up_TEXT_jaefeg.png)",
-					backgroundSize: '100%',
+					backgroundImage: "url(https://res.cloudinary.com/tinamarieg/image/upload/v1615219947/Congratulations_-_pop-up_placement_wl6wun.png)",
+					backgroundSize: 'cover',
 					backgroundColor: "black",
 					width: "103vw",
 					height: "100vh",
-					position: "fived"
+					position: "fixed"
 				}}
 				onClick={restart}>
 
