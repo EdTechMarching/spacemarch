@@ -5,21 +5,15 @@ const WinPage = ({ restart }) => {
 		<>
 			<div
 				style={{
-					background: "black",
-					width: "100vw",
-					height: "100vh"
+					backgroundImage: "url(https://res.cloudinary.com/tinamarieg/image/upload/v1615164466/Congratulations_Pop-up_TEXT_jaefeg.png)",
+					backgroundSize: '100%',
+					backgroundColor: "black",
+					width: "107vw",
+					height: "100vh",
+					position: "fived"
 				}}
 				onClick={restart}>
-				<h2
-					style={{
-						position: "absolute",
-						width: "inherit",
-						height: "inherit",
-						background: "transparent",
-						top: "50px"
-					}}>
-					You did it! Play Again!
-				</h2>
+			
 			</div>
 		</>
 	)
