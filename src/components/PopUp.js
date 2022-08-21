@@ -6,8 +6,9 @@ const PopUp = ({ popUpState, currentQuestion, getQuestion, handlePopUp }) => {
 
 	return (
 		<div id="pop-up-container">
-			<div id="pop-up">
+
 				{popUpState === "next" ? (
+          <div id="pop-up">
 					<div id="pop-up-text">
 						<h2>Yes, I am {answer[0]}!</h2>
 						<div className="pop-up-details">
@@ -32,10 +33,19 @@ const PopUp = ({ popUpState, currentQuestion, getQuestion, handlePopUp }) => {
 							</div>
 						</div>
 					</div>
+          	</div>
+
 				) : popUpState === "retry" ? (
-					<h2>Try Again!</h2>
+          <div id="pop-up">
+            <div id="pop-up-text-try">
+            <button onClick={handlePopUp} className="close-try-again">X</button>
+              <div className="pop-up-info">
+                <h2>Try Again!</h2>
+              </div>
+            </div>
+          </div>
 				) : null}
-			</div>
+
 		</div>
 	)
 }
